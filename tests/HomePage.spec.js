@@ -7,3 +7,19 @@ test.beforeAll(({page}) => {
 test('Homepage has title', async ({ page }) => {
     await expect(page).toHaveTitle(/Home Page/);
 })
+
+test('', async ({ page }) => {
+    await expect(page).toHaveTitle(/Home Page/);
+})
+
+test('', async ({ page }) => {
+    await expect(page).toHaveTitle(/Home Page/);
+})
+
+test('', async ({ page }) => {
+    await expect(page).toHaveTitle(/Home Page/);
+})
+
+test('', async ({ page }) => {
+    await expect(page).toHaveTitle(/Home Page/);
+})
