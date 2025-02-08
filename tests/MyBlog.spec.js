@@ -1,10 +1,10 @@
 const {test, expect} = require('@playwright/test')
 
 test.beforeEach(({page}) => {
-    page.goto('http://localhost:4321/projects');
+    page.goto('http://localhost:4321/blog');
 })
 
-test('Projects Page has title', async ({ page }) => {
+test('Blog Page Page has title', async ({ page }) => {
     await expect(page).toHaveTitle("Projects");
 })
 
