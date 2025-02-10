@@ -5,7 +5,7 @@ test.beforeEach(({page}) => {
 })
 
 test('Blog Page Page has title', async ({ page }) => {
-    await expect(page).toHaveTitle("Projects");
+    await expect(page).toHaveTitle("Blog");
 })
 
 test('', async ({ page }) => {
