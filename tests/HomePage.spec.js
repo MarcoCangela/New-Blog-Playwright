@@ -12,5 +12,14 @@ test('Homepage has title', async ({ page }) => {
     await expect(page).toHaveTitle("Marco Garujo | Portfolio Website");
 })
 
-test('', async ({ page }) => {
+test('Click the Connect button on page', async ({ page }) => {
+  await page.locator().click();
+})
+
+test('Click on a project from List', async ({ page }) => {
+
+})
+
+test('Click on a Blog from Medium List', async ({ page }) => {
+
 })
