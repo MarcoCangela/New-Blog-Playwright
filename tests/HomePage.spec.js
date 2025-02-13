@@ -13,8 +13,7 @@ test('Homepage has title', async ({ page }) => {
 })
 
 test('Click the Connect button on page', async ({ page }) => {
-  await page.locator().click();
-})
+  await page.getByRole('link', { name: 'Let\'s connect!' }).click();})
 
 test('Click on a project from List', async ({ page }) => {
 
