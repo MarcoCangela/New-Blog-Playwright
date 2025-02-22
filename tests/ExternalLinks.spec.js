@@ -14,7 +14,7 @@ test('External Link to Medium', async ({ page }) => {
     //Link to medium
     await page.getByRole('link', { name: 'Medium' }).click();
 
-    const pages = await page.context().pages();
+    const newage = await page.context().pages();
     const newTab = pages[pages.length-1];
     await newTab.waitForLoadState();
 
@@ -23,6 +23,9 @@ test('External Link to Medium', async ({ page }) => {
 test('External to Linkedin', async ({ page }) => {
     //Link to Linkedin and back 
     await page.getByRole('link', { name: 'Linkedin' }).click();
+    const pages = await page.context().pages();
+    const newTab = pages[pages.length-1];
+    await newTab.waitForLoadState();
 })
 
 test('External to Twitter', async ({ page }) => {
