@@ -31,5 +31,8 @@ test('External to Linkedin', async ({ page }) => {
 test('External to Twitter', async ({ page }) => {
     //Link to Twitter and back 
     await page.getByRole('link', { name: 'Twitter' }).click();
+    const pages = await page.context().pages();
+    const newTab = pages[pages.length-1];
+    await newTab.waitForLoadState();
 })
 
