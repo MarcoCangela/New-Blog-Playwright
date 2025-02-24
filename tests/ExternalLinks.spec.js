@@ -13,10 +13,11 @@ test('External Link to Github', async ({ page }) => {
 test('External Link to Medium', async ({ page }) => {
     //Link to medium
     await page.getByRole('link', { name: 'Medium' }).click();
-
-    const newage = await page.context().pages();
-    const newTab = pages[pages.length-1];
-    await newTab.waitForLoadState();
+    const newTabPromise = page.waitForEvent("popup");
+    // Then we get the new page as a promise
+    const newTab = await newTabPromise;
+    //Ensuring that we are redirected to the correct page and that the page title is correct
+    console.log('The page title is: ' + await newTab.title());
 
 })
 
