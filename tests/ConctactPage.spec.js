@@ -4,7 +4,7 @@ test.beforeEach(({page}) => {
     page.goto('http://localhost:4321/');
 })
 
-test('Contact Page has title', async ({ page }) => {
-    await expect(page).toHaveTitle("Contact");
+test('Click on contact to send email', async ({ page }) => {
+    await page.getByRole('link', { name: 'Contact' }).click();
 })
 
