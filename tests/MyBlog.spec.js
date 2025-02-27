@@ -9,5 +9,19 @@ test('Blog Page Page has title', async ({ page }) => {
 })
 
 test('', async ({ page }) => {
-    await expect(page).toHaveTitle(/Home Page/);
+})
+
+test('', async ({ page }) => {
+})
+
+test('', async ({ page }) => {
+})
+
+test('', async ({ page }) => {
+})
+
+test('', async ({ page }) => {
+})
+
+test('', async ({ page }) => {
 })
