@@ -8,20 +8,6 @@ test('Blog Page Page has title', async ({ page }) => {
     await expect(page).toHaveTitle("Blog");
 })
 
-test('', async ({ page }) => {
+test('Verify first Post', async ({ page }) => {
 })
 
-test('', async ({ page }) => {
-})
-
-test('', async ({ page }) => {
-})
-
-test('', async ({ page }) => {
-})
-
-test('', async ({ page }) => {
-})
-
-test('', async ({ page }) => {
-})
